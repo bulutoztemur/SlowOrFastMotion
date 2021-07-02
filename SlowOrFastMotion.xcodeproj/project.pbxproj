@@ -10,11 +10,15 @@
 		88165936266966E300B5B233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88165935266966E300B5B233 /* AppDelegate.swift */; };
 		88165938266966E300B5B233 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88165937266966E300B5B233 /* SceneDelegate.swift */; };
 		8816593A266966E300B5B233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88165939266966E300B5B233 /* ViewController.swift */; };
-		8816593D266966E300B5B233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8816593B266966E300B5B233 /* Main.storyboard */; };
 		8816593F266966E300B5B233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8816593E266966E300B5B233 /* Assets.xcassets */; };
 		88165942266966E300B5B233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88165940266966E300B5B233 /* LaunchScreen.storyboard */; };
 		8816594D266966E400B5B233 /* SlowOrFastMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816594C266966E400B5B233 /* SlowOrFastMotionTests.swift */; };
 		88165958266966E400B5B233 /* SlowOrFastMotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88165957266966E400B5B233 /* SlowOrFastMotionUITests.swift */; };
+		88165973266968E500B5B233 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816596E266968E500B5B233 /* Constants.swift */; };
+		88165974266968E500B5B233 /* ProjectFrameUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816596F266968E500B5B233 /* ProjectFrameUtil.swift */; };
+		88165975266968E500B5B233 /* SpeedCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88165970266968E500B5B233 /* SpeedCurveView.swift */; };
+		88165976266968E500B5B233 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88165971266968E500B5B233 /* PlayButton.swift */; };
+		88165977266968E500B5B233 /* SpeedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88165972266968E500B5B233 /* SpeedLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		88165935266966E300B5B233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88165937266966E300B5B233 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		88165939266966E300B5B233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8816593C266966E300B5B233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8816593E266966E300B5B233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88165941266966E300B5B233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88165943266966E300B5B233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		88165953266966E400B5B233 /* SlowOrFastMotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowOrFastMotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88165957266966E400B5B233 /* SlowOrFastMotionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowOrFastMotionUITests.swift; sourceTree = "<group>"; };
 		88165959266966E400B5B233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8816596E266968E500B5B233 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8816596F266968E500B5B233 /* ProjectFrameUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFrameUtil.swift; sourceTree = "<group>"; };
+		88165970266968E500B5B233 /* SpeedCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedCurveView.swift; sourceTree = "<group>"; };
+		88165971266968E500B5B233 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		88165972266968E500B5B233 /* SpeedLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,10 @@
 		88165934266966E300B5B233 /* SlowOrFastMotion */ = {
 			isa = PBXGroup;
 			children = (
-				88165935266966E300B5B233 /* AppDelegate.swift */,
-				88165937266966E300B5B233 /* SceneDelegate.swift */,
+				8816598126696A6000B5B233 /* SupportFiles */,
+				8816598026696A5000B5B233 /* AppDelegate */,
+				8816597F26696A3700B5B233 /* Common */,
 				88165939266966E300B5B233 /* ViewController.swift */,
-				8816593B266966E300B5B233 /* Main.storyboard */,
-				8816593E266966E300B5B233 /* Assets.xcassets */,
-				88165940266966E300B5B233 /* LaunchScreen.storyboard */,
-				88165943266966E300B5B233 /* Info.plist */,
 			);
 			path = SlowOrFastMotion;
 			sourceTree = "<group>";
@@ -126,6 +131,45 @@
 				88165959266966E400B5B233 /* Info.plist */,
 			);
 			path = SlowOrFastMotionUITests;
+			sourceTree = "<group>";
+		};
+		8816597B2669690F00B5B233 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				88165971266968E500B5B233 /* PlayButton.swift */,
+				88165970266968E500B5B233 /* SpeedCurveView.swift */,
+				88165972266968E500B5B233 /* SpeedLineView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8816597F26696A3700B5B233 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8816597B2669690F00B5B233 /* CustomViews */,
+				8816596E266968E500B5B233 /* Constants.swift */,
+				8816596F266968E500B5B233 /* ProjectFrameUtil.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8816598026696A5000B5B233 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				88165935266966E300B5B233 /* AppDelegate.swift */,
+				88165937266966E300B5B233 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8816598126696A6000B5B233 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8816593E266966E300B5B233 /* Assets.xcassets */,
+				88165940266966E300B5B233 /* LaunchScreen.storyboard */,
+				88165943266966E300B5B233 /* Info.plist */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +277,6 @@
 			files = (
 				88165942266966E300B5B233 /* LaunchScreen.storyboard in Resources */,
 				8816593F266966E300B5B233 /* Assets.xcassets in Resources */,
-				8816593D266966E300B5B233 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88165975266968E500B5B233 /* SpeedCurveView.swift in Sources */,
+				88165976266968E500B5B233 /* PlayButton.swift in Sources */,
+				88165977266968E500B5B233 /* SpeedLineView.swift in Sources */,
 				8816593A266966E300B5B233 /* ViewController.swift in Sources */,
 				88165936266966E300B5B233 /* AppDelegate.swift in Sources */,
+				88165974266968E500B5B233 /* ProjectFrameUtil.swift in Sources */,
 				88165938266966E300B5B233 /* SceneDelegate.swift in Sources */,
+				88165973266968E500B5B233 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +344,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8816593B266966E300B5B233 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8816593C266966E300B5B233 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		88165940266966E300B5B233 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65S558ZT4U;
-				INFOPLIST_FILE = SlowOrFastMotion/Info.plist;
+				INFOPLIST_FILE = SlowOrFastMotion/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65S558ZT4U;
-				INFOPLIST_FILE = SlowOrFastMotion/Info.plist;
+				INFOPLIST_FILE = SlowOrFastMotion/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
